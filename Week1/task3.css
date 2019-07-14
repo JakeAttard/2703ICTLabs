@@ -1,0 +1,29 @@
+.navbar-nav.ml-auto {
+    margin: 0;
+}
+
+.form-control {
+    width: 200px;
+}
+
+#message {
+    height: 100px;
+}
+
+.img-rounded {
+    height: 60px;
+    width: 60px;
+}
+
+.cont-writing {
+    float: right;
+}
+
+.profile-container {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#leftSide {
+    text-align: left;
+}
