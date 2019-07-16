@@ -6,34 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Task 3</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="task3.css">
 </head>
 <body>
 
   <!-- NavBar-->
-    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-      <a class="navbar-brand" href="#">Social Network</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+  <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+      <a class="navbar-brand ml-4" href="#">Social Network</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link mr-4" href="#">Photo</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link mr-4" href="#">Friends</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link mr-4" href="#">Login</a>
-        </li>
-      </ul>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link mr-5" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mr-5" href="#">Friends</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link mr-5" href="#">Login</a>
+            </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- Content-->
-    <div class="container ml-12" style="margin-top: 25px">
+    <div class="container" style="margin-top: 25px">
         <div class="row">
           <!-- Left Column-->
-          <div class="col-sm-3" id="leftSide">
+          <div class="col-md-4" id="leftSide">
             <div class="form-group">
                 <label for="usr">Name:</label>
                 <input type="text" class="form-control" id="usr" placeholder="Enter your name">
@@ -45,7 +50,7 @@
           </div>
 
           <!-- Right Column-->
-          <div class="col-sm-9">
+          <div class="col-md-8">
             Jake Attard
             <div class="profile-container" style="border:1px solid #000000">
               <img src="profileImage.png" class="img-rounded" alt="ProfileImage">
