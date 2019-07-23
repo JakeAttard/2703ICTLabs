@@ -1,0 +1,32 @@
+#post {
+    border-color: black;
+    border-style: solid;
+    margin: 50px;
+    padding: 20px;
+}
+
+#content {
+    width: 800px;
+    margin: auto;
+}
+
+#comment {
+    border-color: black;
+    border-style: solid;
+    width: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 150px;
+    padding: 20px;
+}
+
+#comment-title {
+    color: red;
+    margin-left: 150px;
+}
+
+#post-title {
+    color: blue;
+    margin-left: 50px;
+    margin-top: 25px;
+}
