@@ -49,6 +49,7 @@
         <div id="content">
             <h1>Social Media</h1>
 
+            <!-- Display Post -->
             <?php foreach($posts as $post) {?>
 
                 <h4 id="post-title">Post:</h4>
@@ -66,6 +67,7 @@
                         <strong>Comments:</strong> <br>
                     </div>
                     
+                    <!-- Display Post Comments Loop -->
                     <?php foreach($post->getComments() as $comment) {?>
                         <div id="comment">
                             <strong><?= $comment->getUser() ?></strong> <br>

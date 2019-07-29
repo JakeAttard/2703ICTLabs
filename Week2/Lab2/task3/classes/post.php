@@ -1,7 +1,8 @@
 <?php namespace jakeattard;
 
-require_once('comment.php');
+require_once('Comment.php');
 
+// Post Class Created
 class Post {
     protected $user;
     protected $message;
@@ -10,6 +11,7 @@ class Post {
 
     protected $comments = [];
 
+    // Post Constructor
     function __construct($user, $message, $image, $date) {
         $this->user = $user;
         $this->message = $message;
@@ -17,6 +19,7 @@ class Post {
         $this->date = $date;
     }
 
+    // Method Functions
     function getUser() {
         return $this->user;
     }
