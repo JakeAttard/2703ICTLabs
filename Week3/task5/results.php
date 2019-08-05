@@ -10,6 +10,7 @@ include "includes/defs.php";
 $name = $_GET['name'];
 $year = $_GET['year'];
 $state = $_GET['state'];
+$error = "";
 
 /* Get array of pms that match query in form data. */
 $pms = search($name, $year, $state);
@@ -28,6 +29,16 @@ $pms = search($name, $year, $state);
 <body>
 <h2>Australian Prime Ministers</h2>
 <h3>Results</h3>
+
+<?php 
+  if ((empty($name) && empty($year) && empty($state)) || (!(is_numeric($year)) && !($year==="")))  { 
+    if ((empty($name) && empty($year) && empty($state))) {
+      $message = "At least one field must contain value";
+    } else {  
+      $message = "Year must be a number";
+    }
+    echo $message; 
+  }?>
 
 <?php 
 if (count($pms) == 0) {
@@ -53,7 +64,15 @@ foreach($pms as $pm) {
 }
 ?>
 
-<p><a href="index.html">New search</a></p>
+<form method="get" action="results.php">
+  <table>
+    <tr><td>Name: </td><td><input type="text" name="name"></td></tr>
+    <tr><td>Year: </td><td><input type="text" name="year"></td></tr>
+    <tr><td>State: </td><td><input type="text" name="state"></td></tr>
+    <tr><td colspan=2><input type="submit" value="Search">
+                      <input type="reset" value="Reset"></td></tr>
+  <table>
+</form>
 
 <hr>
 <p>
